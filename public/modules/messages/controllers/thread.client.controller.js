@@ -131,6 +131,13 @@ angular.module('messages').controller('MessagesThreadController', ['$scope', '$s
         return read;
     };
 
+    /**
+     * Save a message to localStorage (called on keyup)
+     */
+    $scope.save = function() {
+      console.log(this.content);
+    }
+
 
     /**
      * Send a message
